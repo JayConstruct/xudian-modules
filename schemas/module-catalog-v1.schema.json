@@ -49,6 +49,15 @@
             "type": "string",
             "format": "uri",
             "pattern": "^https://raw\\.githubusercontent\\.com/"
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 20,
+            "pattern": "\\S"
+          },
+          "featured": {
+            "type": "boolean"
           }
         }
       }

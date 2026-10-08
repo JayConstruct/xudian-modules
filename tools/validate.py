@@ -48,6 +48,11 @@ def validate_catalog(catalog):
         seen.add(module_id)
         for field in ('name', 'description', 'author'):
             require(isinstance(entry.get(field), str) and entry[field].strip(), f"missing {field}: {module_id}")
+        if 'category' in entry:
+            require(isinstance(entry['category'], str) and entry['category'].strip()
+                    and len(entry['category']) <= 20, f"invalid category: {module_id}")
+        if 'featured' in entry:
+            require(type(entry['featured']) is bool, f"invalid featured: {module_id}")
         repository = repository_name(entry.get('repository'))
         url = https_url(entry.get('indexUrl'), 'raw.githubusercontent.com', f'/{repository}/')
         require(len(url.path.split('/')) >= 5 and url.path.endswith('.json'), "index URL must include a ref and JSON path")
