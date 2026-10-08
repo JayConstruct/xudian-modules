@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "序点作者版本索引 v1",
+  "type": "object",
+  "required": [
+    "indexFormat",
+    "moduleId",
+    "repository",
+    "versions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "indexFormat": {
+      "const": 1
+    },
+    "moduleId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(\\.[a-z][a-z0-9_-]*)+$"
+    },
+    "repository": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+    },
+    "versions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "version",
+          "manifest",
+          "services",
+          "url",
+          "size",
+          "sha256"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "version": {
+            "type": "string",
+            "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$"
+          },
+          "manifest": {
+            "type": "object",
+            "required": [
+              "id",
+              "version",
+              "hostApi",
+              "dataVersion",
+              "permissions",
+              "dependencies"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(\\.[a-z][a-z0-9_-]*)+$"
+              },
+              "version": {
+                "type": "string"
+              },
+              "hostApi": {
+                "type": "string"
+              },
+              "dataVersion": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              },
+              "permissions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              },
+              "dependencies": {
+                "type": "array"
+              },
+              "serviceDependencies": {
+                "type": "array"
+              }
+            }
+          },
+          "services": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "major",
+                "kind"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "major": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "kind": {
+                  "enum": [
+                    "query",
+                    "command"
+                  ]
+                }
+              }
+            }
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://github\\.com/[^/]+/[^/]+/releases/download/[^/]+/[^/]+\\.xmodule$"
+          },
+          "size": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 16777216
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "signature": {
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

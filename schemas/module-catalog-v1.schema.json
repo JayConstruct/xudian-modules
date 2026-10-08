@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "序点模块目录 v1",
+  "type": "object",
+  "required": [
+    "catalogFormat",
+    "modules"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "catalogFormat": {
+      "const": 1
+    },
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "description",
+          "author",
+          "repository",
+          "indexUrl"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(\\.[a-z][a-z0-9_-]*)+$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "author": {
+            "type": "string",
+            "minLength": 1
+          },
+          "repository": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+          },
+          "indexUrl": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://raw\\.githubusercontent\\.com/"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "catalogFormat": 1,
+  "modules": [
+    {
+      "id": "app.ai",
+      "name": "AI 助手",
+      "description": "提供 AI 助手入口和宿主服务接口。",
+      "author": "JayConstruct",
+      "repository": "JayConstruct/xudian",
+      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.ai.json"
+    },
+    {
+      "id": "app.import.shiguang",
+      "name": "拾光教务导入兼容",
+      "description": "兼容拾光教务导入脚本，将教务数据转换为课表导入草稿。",
+      "author": "JayConstruct",
+      "repository": "JayConstruct/xudian",
+      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.import.shiguang.json"
+    },
+    {
+      "id": "app.import.zhengfang",
+      "name": "正方教务导入（通用）",
+      "description": "通过浏览器采集正方教务课表，调用拾光兼容模块导入大学课表。",
+      "author": "JayConstruct",
+      "repository": "JayConstruct/xudian",
+      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.import.zhengfang.json"
+    },
+    {
+      "id": "app.schedule",
+      "name": "大学课表",
+      "description": "管理学期、作息、课程、调课记录与多个课表，支持导入和备份。",
+      "author": "JayConstruct",
+      "repository": "JayConstruct/xudian",
+      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.schedule.json"
+    },
+    {
+      "id": "app.tasks",
+      "name": "任务",
+      "description": "管理任务、项目、状态和计划日期。",
+      "author": "JayConstruct",
+      "repository": "JayConstruct/xudian",
+      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.tasks.json"
+    },
+    {
+      "id": "app.ui.contributions",
+      "name": "UI 示例贡献",
+      "description": "展示可向其他页面贡献的界面组件和入口。",
+      "author": "JayConstruct",
+      "repository": "JayConstruct/xudian",
+      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.ui.contributions.json"
+    },
+    {
+      "id": "app.ui.examples",
+      "name": "UI 示例",
+      "description": "浏览模块界面组件、布局和交互示例。",
+      "author": "JayConstruct",
+      "repository": "JayConstruct/xudian",
+      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.ui.examples.json"
+    },
+    {
+      "id": "app.views.inbox",
+      "name": "收件箱",
+      "description": "集中查看和处理尚未归类的任务。",
+      "author": "JayConstruct",
+      "repository": "JayConstruct/xudian",
+      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.views.inbox.json"
+    },
+    {
+      "id": "app.views.projects",
+      "name": "项目",
+      "description": "按项目查看任务与项目进度。",
+      "author": "JayConstruct",
+      "repository": "JayConstruct/xudian",
+      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.views.projects.json"
+    },
+    {
+      "id": "app.views.today",
+      "name": "今天",
+      "description": "查看今天的任务和计划。",
+      "author": "JayConstruct",
+      "repository": "JayConstruct/xudian",
+      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.views.today.json"
+    },
+    {
+      "id": "example.ui.compact",
+      "name": "紧凑界面示例",
+      "description": "提供紧凑布局的可选界面包。",
+      "author": "JayConstruct",
+      "repository": "JayConstruct/xudian",
+      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/example.ui.compact.json"
+    }
+  ]
+}
