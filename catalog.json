@@ -13,19 +13,10 @@
     {
       "id": "app.import.shiguang",
       "name": "拾光教务导入兼容",
-      "description": "兼容拾光教务导入脚本，将教务数据转换为课表导入草稿。",
+      "description": "按学校或通用教务系统导入课程，提供脚本说明、源码与致谢，预览确认后保存课表。",
       "author": "JayConstruct",
       "repository": "JayConstruct/xudian",
       "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.import.shiguang.json",
-      "category": "学习"
-    },
-    {
-      "id": "app.import.zhengfang",
-      "name": "正方教务导入（通用）",
-      "description": "通过浏览器采集正方教务课表，调用拾光兼容模块导入大学课表。",
-      "author": "JayConstruct",
-      "repository": "JayConstruct/xudian",
-      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.import.zhengfang.json",
       "category": "学习",
       "featured": true
     },
