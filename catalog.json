@@ -51,34 +51,16 @@
     {
       "id": "app.ui.examples",
       "name": "UI 示例",
-      "description": "浏览模块界面组件、布局和交互示例。",
+      "description": "分类浏览真实 UI、控件与动画，查看调用方式并固定常用演示。",
       "author": "JayConstruct",
       "repository": "JayConstruct/xudian",
       "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.ui.examples.json",
       "category": "界面"
     },
     {
-      "id": "app.views.inbox",
-      "name": "收件箱",
-      "description": "集中查看和处理尚未归类的任务。",
-      "author": "JayConstruct",
-      "repository": "JayConstruct/xudian",
-      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.views.inbox.json",
-      "category": "效率"
-    },
-    {
-      "id": "app.views.projects",
-      "name": "项目",
-      "description": "按项目查看任务与项目进度。",
-      "author": "JayConstruct",
-      "repository": "JayConstruct/xudian",
-      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.views.projects.json",
-      "category": "效率"
-    },
-    {
       "id": "app.views.today",
-      "name": "今天",
-      "description": "查看今天的任务和计划。",
+      "name": "日程",
+      "description": "按日期汇总任务、课程与各模块提供的日程内容。",
       "author": "JayConstruct",
       "repository": "JayConstruct/xudian",
       "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.views.today.json",
@@ -87,7 +69,7 @@
     {
       "id": "example.ui.compact",
       "name": "紧凑界面示例",
-      "description": "提供紧凑布局的可选界面包。",
+      "description": "提供可独立调用的紧凑按钮与可选界面样式。",
       "author": "JayConstruct",
       "repository": "JayConstruct/xudian",
       "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/example.ui.compact.json",
