@@ -21,6 +21,15 @@
       "featured": true
     },
     {
+      "id": "app.planner",
+      "name": "任务规划",
+      "description": "定义模糊窗口与重复规则，批量建议并确认任务时间。",
+      "author": "JayConstruct",
+      "repository": "JayConstruct/xudian",
+      "indexUrl": "https://raw.githubusercontent.com/JayConstruct/xudian/module-catalog/module-index/app.planner.json",
+      "category": "效率"
+    },
+    {
       "id": "app.schedule",
       "name": "大学课表",
       "description": "管理学期、作息、课程、调课记录与多个课表，支持导入和备份。",
